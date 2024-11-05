@@ -8,9 +8,8 @@ export default function Page() {
 
   const [email, setEmail] = useState('');
 
-  const handleSubmit = (formData) => {
+  const handleSubmit = (formData: FormData) => {
     setEmail(formData.get('email') as string);
-    // 此处不做任何操作，仅显示提示信息
     alert("本站不支持注册");
   };
 
